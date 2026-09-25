@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Gate Officer Mobile Scanner",
+    "slug": "gate-officer-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#020617"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow KASU Gate Scanner to access your camera to scan vehicle pass QR codes."
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "KASU Gate Scanner requires camera access to scan driver vehicle pass QR codes."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#020617"
+      },
+      "permissions": [
+        "CAMERA"
+      ]
+    }
+  }
+}
